@@ -255,18 +255,8 @@ export async function shopifyFetch<T>({
  * Fetch the first 10 luxury keyboard products
  */
 export async function getProducts(first: number = 10): Promise<Product[]> {
-  try {
-    const res = await shopifyFetch<ShopifyProductsOperation>({
-      query: getProductsQuery,
-      variables: { first },
-      tags: ["products"],
-    });
-
-    return res.data.products.edges.map((edge) => edge.node);
-  } catch (err) {
-    console.error("Error in getProducts:", err);
-    return LUXURY_KEYBOARD_PRODUCTS.slice(0, first);
-  }
+  // Hardcoded to return the high-fidelity mockups for the frontend showcase
+  return LUXURY_KEYBOARD_PRODUCTS.slice(0, first);
 }
 
 export async function getProduct(handle: string): Promise<Product | undefined> {
