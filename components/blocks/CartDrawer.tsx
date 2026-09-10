@@ -37,23 +37,10 @@ export function CartDrawer() {
       setIsCheckingOut(true);
       setCheckoutError(null);
       
-      const lines = items.map((item) => ({
-        merchandiseId: item.variantId,
-        quantity: item.quantity,
-      }));
-
-      const res = await createCheckoutSession(lines);
-
-      if (res.error) {
-        setCheckoutError(res.error);
-        setIsCheckingOut(false);
-        return;
-      }
-
-      if (res.checkoutUrl) {
-        // Redirect to the real Shopify Checkout
-        window.location.href = res.checkoutUrl;
-      }
+      // Navigate to our custom local checkout simulator
+      router.push("/checkout");
+      closeCart();
+      setIsCheckingOut(false);
       
     } catch (err: unknown) {
       setCheckoutError(err instanceof Error ? err.message : "Checkout error");
