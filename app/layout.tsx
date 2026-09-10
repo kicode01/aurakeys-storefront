@@ -47,9 +47,9 @@ export const metadata: Metadata = {
     "Shopify headless",
   ],
   openGraph: {
-    title: "AuraKeys — Tactile Artistry Redefined",
+    title: "AuraKeys",
     description:
-      "Bespoke mechanical keyboards engineered with architectural precision and acoustic resonance.",
+      "Precision-milled mechanical keyboards, hand-assembled with acoustic resonance chambers, mirror PVD brass weights, and bespoke switches.",
     url: "https://aurakeys.com",
     siteName: "AuraKeys",
     locale: "en_US",

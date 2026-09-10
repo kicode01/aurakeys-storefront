@@ -2,7 +2,7 @@ import { Metadata } from "next";
 import { CustomizerClientWrapper } from "./CustomizerClientWrapper";
 
 export const metadata: Metadata = {
-  title: "3D Studio Customizer",
+  title: "AuraKeys",
   description:
     "Design and configure your bespoke mechanical keyboard in real-time 3D. Choose your CNC anodization, keycap set, PVD brass weight, and switches.",
 };
