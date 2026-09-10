@@ -1,6 +1,4 @@
-# AuraKeys | Luxury Bespoke Mechanical Keyboards
-
-![AuraKeys Banner](public/logo-v2.jpg)
+# AuraKeys | Bespoke Mechanical Keyboards
 
 AuraKeys is a premium, headless e-commerce storefront designed for bespoke, CNC-machined mechanical keyboards. Built to deliver an immersive, stutter-free shopping experience with high-end aesthetics, cinematic animations, and real-time interactive 3D elements.
 
