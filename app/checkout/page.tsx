@@ -179,7 +179,7 @@ export default function CheckoutPage() {
                     <svg className="w-5 h-5" viewBox="0 0 24 24" fill="currentColor">
                       <path d="M7.076 21.337H2.47a.641.641 0 0 1-.633-.74L4.944.901C5.026.382 5.474 0 5.998 0h7.46c2.57 0 4.578.543 5.69 1.81 1.01 1.15 1.304 2.42 1.012 4.287-.023.143-.047.288-.077.437-.983 5.05-4.349 6.797-8.647 6.797h-2.19c-.474 0-.88.356-.952.826l-1.218 7.18z"/>
                     </svg>
-                    Simulate PayPal Sandbox
+                    Pay with PayPal
                   </button>
                 </div>
 
