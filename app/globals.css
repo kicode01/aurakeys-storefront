@@ -1,0 +1,180 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: #08090C;
+  --foreground: #EDEDED;
+}
+
+/* Lenis Recommended CSS */
+html.lenis, html.lenis body {
+  height: auto;
+}
+
+.lenis.lenis-smooth {
+  scroll-behavior: auto !important;
+}
+
+.lenis.lenis-smooth [data-lenis-prevent] {
+  overscroll-behavior: contain;
+}
+
+.lenis.lenis-stopped {
+  overflow: hidden;
+}
+
+.lenis.lenis-scrolling iframe {
+  pointer-events: none;
+}
+
+/* Base Body Styles */
+body {
+  background-color: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-sans), system-ui, sans-serif;
+  overflow-x: hidden;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Luxury Editorial Headings */
+h1, h2, h3, h4, .font-display {
+  font-family: var(--font-display), system-ui, sans-serif;
+  letter-spacing: -0.035em;
+}
+
+/* Precision Engineering Monospace */
+code, kbd, samp, pre, .font-mono {
+  font-family: var(--font-mono), monospace;
+}
+
+/* Cyber-Industrial Graphic Surfaces (Teenage Engineering & Nothing Tech inspired) */
+.bg-dot-matrix {
+  background-image: radial-gradient(rgba(255, 255, 255, 0.12) 1px, transparent 1px);
+  background-size: 16px 16px;
+}
+
+.bg-dot-matrix-subtle {
+  background-image: radial-gradient(rgba(255, 255, 255, 0.05) 1px, transparent 1px);
+  background-size: 24px 24px;
+}
+
+.bg-grid-isometric {
+  background-size: 32px 32px;
+  background-image: 
+    linear-gradient(to right, rgba(255, 255, 255, 0.04) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(255, 255, 255, 0.04) 1px, transparent 1px);
+}
+
+/* Industrial Surfaces - Zero GPU thrashing */
+.cyber-panel {
+  background: #0E1015;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.cyber-card {
+  background: #111319;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  transition: border-color 0.2s ease, transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.cyber-card:hover {
+  border-color: #FF4400;
+  box-shadow: 0 0 20px rgba(255, 68, 0, 0.15);
+}
+
+/* Glassmorphism Surface Classes - Optimized */
+.glass-panel {
+  background: rgba(14, 16, 21, 0.92);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.glass-card {
+  background: rgba(18, 20, 27, 0.9);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.glass-card:hover {
+  border-color: #FF4400;
+  box-shadow: 0 8px 24px -6px rgba(0, 0, 0, 0.6), 0 0 16px -2px rgba(255, 68, 0, 0.18);
+}
+
+/* Cyber Technical Gradients */
+.text-gradient-orange {
+  background: linear-gradient(135deg, #FFF 0%, #FFA07A 25%, #FF4400 70%, #CC3300 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.text-gradient-gold {
+  background: linear-gradient(135deg, #FFF0CA 0%, #E2C26C 35%, #D4AF37 70%, #9F7E24 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.text-gradient-silver {
+  background: linear-gradient(180deg, #FFFFFF 0%, #E5E7EB 50%, #9CA3AF 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Corner Screw Accents */
+.corner-screws {
+  position: relative;
+}
+.corner-screws::before {
+  content: "⊕";
+  position: absolute;
+  top: 8px;
+  left: 10px;
+  font-family: var(--font-mono);
+  font-size: 10px;
+  color: rgba(255, 255, 255, 0.2);
+  pointer-events: none;
+}
+.corner-screws::after {
+  content: "⊕";
+  position: absolute;
+  top: 8px;
+  right: 10px;
+  font-family: var(--font-mono);
+  font-size: 10px;
+  color: rgba(255, 255, 255, 0.2);
+  pointer-events: none;
+}
+
+/* Custom Tactical Scrollbar */
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+::-webkit-scrollbar-track {
+  background: #090A0D;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #252834;
+  border-radius: 2px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #FF4400;
+}
+
+/* Selection Color */
+::selection {
+  background: #FF4400;
+  color: #000000;
+}
+
+/* Hide scrollbars completely while allowing scroll */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
